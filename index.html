@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Create a strong password</h1>
+      <section id="password">
+        <div class="pass-generated">
+          <p>Password</p>
+          <button>Gen</button>
+        </div>
+        <div class="pass-options">
+          <h2>Options</h2>
+          <div class="length">
+            <p>length</p>
+            <label for="pass-length"></label>
+            <input
+              name="pass-length"
+              id="pass-length"
+              value="12"
+              step="1"
+              type="number"
+            />
+            <label for="length-range"></label>
+            <input
+              name="length-range"
+              id="length-range"
+              value="12"
+              step="1"
+              type="range"
+              min="1"
+              max="50"
+            />
+          </div>
+          <div class="opt-checkbox">
+            <input checked='"checked"' type="checkbox" name="uppercase" />
+            <label for="uppercase">A-Z</label>
+          </div>
+          <div class="opt-checkbox">
+            <input checked='"checked"' type="checkbox" name="lowercase" />
+            <label for="lowercase">a-z</label>
+          </div>
+          <div class="opt-checkbox">
+            <input checked='"checked"' type="checkbox" name="numbers" />
+            <label for="number">0-9</label>
+          </div>
+          <div class="opt-checkbox">
+            <input checked='"checked"' type="checkbox" name="symbols" />
+            <label for="symbols">!@#$%^&*</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- JavaScript -->
+      <script src="js/index.js"></script>
+    </main>
+  </body>
+</html>
